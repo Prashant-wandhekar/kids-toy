@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Learning & Fun</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+  <section class="sticky-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light kid-navbar shadow-sm">
+            <div class="container">
+              <!-- Logo -->
+              <a class="navbar-brand d-flex align-items-center logo-text" href="#">
+                <img src="images/Toys-logo.png" alt="logo" class="logo-img me-2">
+              </a>
+
+              <!-- Mobile Toggle -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link animated-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="Category All/all-toys.html">All Toys</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link animated-link"
+                      href="Category All/education_toys.html">Educational Toys</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="About_us.html">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="Contact_us.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="Top_Selling_Products_cart.html">Cart</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="Log-in-page.html">Log In</a></li>
+                </ul>
+
+                <!-- Search -->
+                <form class="d-flex">
+                  <input class="form-control search-box" type="search" placeholder="Search toys..." aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider Section -->
+  <section>
+    <div class="container-fluid p-0">
+      <div id="toyCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider-content">
+              <img src="images/slider1.png" class="slider-img" alt="Slide 1" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-content">
+              <img src="images/slider2.png" class="slider-img" alt="Slide 2" />
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#toyCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#toyCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Budget Card -->
+  <section class="budget-buys py-5 text-center">
+    <div class="container">
+      <h2 class="section-title mb-4">BUDGET BUYS</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="budget-card blue"><span>Under<br>99</span></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="budget-card cyan"><span>Under<br>199</span></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="budget-card purple"><span>Under<br>499</span></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="budget-card pink"><span>Under<br>599</span></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="budget-card orange"><span>Under<br>799</span></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="budget-card yellow"><span>Under<br>999</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LITTLE ONE -->
+  <section class="age-group py-5 text-center">
+    <div class="container">
+      <h2 class="section-title mb-5">HOW OLD IS YOUR LITTLE ONE?</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="age-badge infant"><span>Infant</span>
+            <p>0 - 1 Year</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="age-badge toddler"><span>Toddler</span>
+            <p>1 - 3 Years</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="age-badge preschooler"><span>Pre-schooler</span>
+            <p>3 - 6 Years</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="age-badge aged"><span>Aged</span>
+            <p>6 - 11 Years</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <div class="age-badge adolescent"><span>Adolescent</span>
+            <p>11 - 19 Years</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Top Selling Products -->
+  <section class="budget-buys py-5 text-center">
+    <div class="container">
+      <h2 class="section-title mb-4">Top Selling Products</h2>
+      <div class="row" id="product-container"></div>
+    </div>
+  </section>
+  <script>
+    const products = [
+      {
+        id: 1,
+        title: '12-in-1 Kids Activity & Game Combo Kit',
+        img: 'https://extrokids.com/cdn/shop/files/all_combo.jpg?v=1731150382',
+        description: 'A World of Skill Building & Fun in One Box',
+        price: '999.99',
+        oldPrice: '₹1200.00',
+        rating: 4.5,
+        reviews: 89,
+        badge: 'Sale'
+      },
+      {
+        id: 2,
+        title: 'Wooden Rainbow puzzle with 15 reference cards - EKT2693',
+        img: 'https://extrokids.com/cdn/shop/products/EKT2693-2.jpg?v=1708347584',
+        description: 'This stacker toy is unlike any other. This rainbow puzzle helps develop cognitive and fine motor skills.',
+        price: '₹1090.99',
+        rating: 4.5,
+        reviews: 45,
+      },
+      {
+        id: 3,
+        title: 'Wooden Geometric Stacking Puzzle – Shape-Matching Toy',
+        img: 'https://extrokids.com/cdn/shop/products/EK1403-1.jpg?v=1708378825',
+        description: 'Bring fun and learning together with the Wooden Geometric Stacking Puzzle.',
+        price: '642.99',
+        oldPrice: '999.00',
+        rating: 4.5,
+        reviews: 34,
+        badge: 'Sale'
+      },
+      {
+        id: 4,
+        title: 'Montessori Wooden Shape Sorter',
+        img: 'https://extrokids.com/cdn/shop/files/s-l1200_6.webp?v=1713762134',
+        description: 'Montessori Wooden Shape Sorter | Fun Stacking Toy for Ages 1+',
+        price: '270.00',
+        rating: 4.5,
+        reviews: 24,
+      },
+      // Add more...
+    ];
+
+    localStorage.setItem('allProducts', JSON.stringify(products)); // Store all products
+
+    const renderStars = (rating) => {
+      const fullStars = Math.floor(rating);
+      const hasHalfStar = rating % 1 !== 0;
+      return '<i class="fas fa-star"></i>'.repeat(fullStars) +
+        (hasHalfStar ? '<i class="fas fa-star-half-alt"></i>' : '');
+    };
+
+    const productHTML = products.map(product => `
+    <div class="col-md-4 col-lg-3 mb-4">
+      <div class="card h-100 product-card">
+        ${product.badge ? `<span class="badge bg-danger badge-custom">${product.badge}</span>` : ''}
+        <a href="Top_Selling_Products_details.html?id=${product.id}">
+          <img src="${product.img}" class="card-img-top" alt="${product.title}">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">${product.title}</h5>
+          <div class="rating mb-2">
+            ${renderStars(product.rating)}
+            <span class="text-muted">(${product.reviews})</span>
+          </div>
+          <p class="card-text">${product.description}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="price">${product.price}</span>
+              ${product.oldPrice ? `<span class="old-price ms-2">${product.oldPrice}</span>` : ''}
+            </div>
+            <a href="Top_Selling_Products_details.html?id=${product.id}" class="btn btn-sm btn-outline-primary">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+    document.getElementById('product-container').innerHTML = productHTML;
+  </script>
+
+
+
+
+
+  <!-- Shop By Category -->
+  <section>
+    <div class="container my-4">
+      <h2 class="section-title text-center">Shop By Category</h2>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <a href="Category All/all-toys.html" class="category-link">
+            <div class="card category-card">
+              <img src="images/Category/AllToys.png" class="card-img-top" alt="All Toys">
+              <div class="card-body text-center">
+                <h6 class="card-title">All Toys</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="Category All/education_toys.html" class="category-link">
+            <div class="card category-card">
+              <img src="images/Category/EDUCATIONAL_TOYS.png" class="card-img-top" alt="Educational Toys">
+              <div class="card-body text-center">
+                <h6 class="card-title">Educational Toys</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="Category All/Open_Ended_Toys.html" class="category-link">
+            <div class="card category-card">
+              <img src="images/Category/OPEN_ENDED_TOYS.png" class="card-img-top" alt="Open Ended Toys">
+              <div class="card-body text-center">
+                <h6 class="card-title">Open Ended Toys</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="Category All/School_Supplies.html" class="category-link">
+            <div class="card category-card">
+              <img src="images/Category/school_supplies.png" class="card-img-top" alt="School Supplies">
+              <div class="card-body text-center">
+                <h6 class="card-title">School Supplies</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Read Our Story -->
+  <section>
+    <a href="About_us.html" class="text-decoration-none">
+      <div class="my-custom-bg d-flex align-items-center justify-content-center py-5">
+        <div class="container-fluid text-center text-white">
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- Footer  -->
+  <footer class="kids-footer text-white mt-5">
+    <div class="footer-overlay py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Info Section -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h5 class="footer-heading">INFORMATION</h5>
+            <ul class="footer-links list-unstyled">
+              <li><a href="About_us.html">About Us</a></li>
+              <li><a href="Shipping_And_Cancellation.html">Shipping And Cancellation</a></li>
+              <li><a href="Return_&_Refund_Policy.html">Return & Refund Policy</a></li>
+              <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
+              <li><a href="Contact_us.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Newsletter Section -->
+          <div class="col-md-6 text-md-start text-center">
+            <h5 class="footer-heading">NEWSLETTER SIGN UP</h5>
+            <p class="text-dark ">Sign up for exclusive updates, new arrivals & insider-only discounts</p>
+            <form class="d-flex flex-wrap gap-2 mb-3 kids-form">
+              <input type="email" class="form-control w-100 w-md-auto flex-fill" placeholder="Enter your email address">
+              <button class="btn btn-submit px-4">SUBMIT</button>
+            </form>
+
+            <div class="social-icons d-flex gap-3 justify-content-center justify-content-md-start">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

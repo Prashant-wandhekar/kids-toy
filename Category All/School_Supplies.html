@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education toys details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/view-all-toys.css"> 
+  <link rel="stylesheet" href="../css/Navbar-Footer.css"> 
+</head>
+<body>
+  <!-- Navbar -->
+  <section class="sticky-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light kid-navbar shadow-sm">
+            <div class="container">
+              <!-- Logo -->
+              <a class="navbar-brand d-flex align-items-center logo-text" href="#">
+                <img src="../images/Toys-logo.png" alt="logo" class="logo-img me-2">
+              </a>
+
+              <!-- Mobile Toggle -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link animated-link" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="../Category All/all-toys.html">All Toys</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link animated-link"
+                      href="../Category All/education_toys.html">Educational Toys</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="../About_us.html">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="../Contact_us.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="../Top_Selling_Products_cart.html">Cart</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link animated-link" href="../Log-in-page.html">Log In</a></li>
+                </ul>
+
+                <!-- Search -->
+                <form class="d-flex">
+                  <input class="form-control search-box" type="search" placeholder="Search toys..." aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="container-fluid py-4">
+  <div class="row">
+    <!-- Left Sidebar -->
+    <aside class="col-md-3 mb-4">
+      <div class="p-3 bg-light rounded shadow-sm">
+        <h5 class="fw-bold">Brands</h5>
+        <ul class="list-unstyled">
+          <li><input type="checkbox"> Lego</li>
+          <li><input type="checkbox"> Fisher-Price</li>
+          <li><input type="checkbox"> Hot Wheels</li>
+          <li><input type="checkbox"> Barbie</li>
+        </ul>
+
+        <hr>
+
+        <h5 class="fw-bold">Filters</h5>
+        <ul class="list-unstyled">
+          <li><input type="checkbox"> Age 3+</li>
+          <li><input type="checkbox"> Educational</li>
+          <li><input type="checkbox"> Battery Operated</li>
+          <li><input type="checkbox"> Remote Controlled</li>
+        </ul>
+      </div>
+
+      
+    </aside>
+
+     <!-- Products -->
+     <main class="col-md-9">
+      <div class="row g-4" id="product-list"></div>
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const products = [
+    {
+      id: 1,
+      name: "Toy Car - Speed Racer",
+      brand: "Hot Wheels",
+      price: 14.99,
+      description: "High-speed mini car with durable design.",
+      image: "https://via.placeholder.com/400x300"
+    },
+    {
+      id: 2,
+      name: "Barbie Fashion Doll",
+      brand: "Barbie",
+      price: 19.99,
+      description: "Barbie with trendy outfits and accessories.",
+      image: "https://via.placeholder.com/400x300"
+    },
+    {
+      id: 3,
+      name: "Lego Building Blocks",
+      brand: "Lego",
+      price: 29.99,
+      description: "1000+ pieces for creative building fun.",
+      image: "https://via.placeholder.com/400x300"
+    }
+  ];
+
+  const productList = document.getElementById('product-list');
+
+  productList.innerHTML = products.map(product => `
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="${product.image}" class="card-img-top" alt="${product.name}">
+        <div class="card-body">
+          <h6 class="card-title">${product.name}</h6>
+          <p class="text-muted">${product.brand}</p>
+          <p><strong>$${product.price.toFixed(2)}</strong></p>
+          <a href="School_Supplies_details.html?id=${product.id}" class="btn btn-primary w-100">View Product</a>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  // Save to localStorage for access in detail page
+  localStorage.setItem("products", JSON.stringify(products));
+</script>
+<!-- Footer  -->
+<footer class="kids-footer text-white mt-5">
+  <div class="footer-overlay py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Info Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-heading">INFORMATION</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="../About_us.html">About Us</a></li>
+            <li><a href="../Shipping_And_Cancellation.html">Shipping And Cancellation</a></li>
+            <li><a href="../Return_&_Refund_Policy.html">Return & Refund Policy</a></li>
+            <li><a href="../Privacy_Policy.html">Privacy Policy</a></li>
+            <li><a href="../Contact_us.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Newsletter Section -->
+        <div class="col-md-6 text-md-start text-center">
+          <h5 class="footer-heading">NEWSLETTER SIGN UP</h5>
+          <p class="text-dark ">Sign up for exclusive updates, new arrivals & insider-only discounts</p>
+          <form class="d-flex flex-wrap gap-2 mb-3 kids-form">
+            <input type="email" class="form-control w-100 w-md-auto flex-fill" placeholder="Enter your email address">
+            <button class="btn btn-submit px-4">SUBMIT</button>
+          </form>
+
+          <div class="social-icons d-flex gap-3 justify-content-center justify-content-md-start">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

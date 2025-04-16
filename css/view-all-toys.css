@@ -1,0 +1,26 @@
+.product-card {
+    transition: transform 0.2s ease-in-out;
+    border-radius: 15px;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside h5 {
+    color: #333;
+  }
+  
+  aside input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  .product-card {
+    transition: transform 0.2s ease-in-out;
+    border-radius: 15px;
+  }
+  .product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  

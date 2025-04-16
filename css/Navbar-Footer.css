@@ -1,0 +1,233 @@
+/* Navabr */
+/* Primary color scheme */
+.kid-navbar {
+    background: linear-gradient(to right, #ffe3ec, #d0f4ff);
+    
+  }
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  .logo-img:hover {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 10px;
+    color: #444;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link.animated-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background-color: #ff69b4;
+    transition: width 0.4s ease;
+  }
+  
+  .nav-link.animated-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link:hover {
+    color: #ff69b4;
+  }
+  
+  /* Search Box */
+  .search-box {
+    border-radius: 25px;
+    border: 2px solid #ff69b4;
+    padding: 5px 15px;
+    transition: 0.3s;
+  }
+  
+  .search-box:focus {
+    border-color: #ff1493;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+  }
+  
+  
+  /* Responsive tweaks */
+  @media (max-width: 991px) {
+    .search-box {
+      margin-top: 10px;
+    }
+  }
+
+
+  /* Footer Code */
+  
+/* Footer */
+.kids-footer {
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  .footer-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 40px 20px;
+    color: rgba(51, 51, 51, 0.9); 
+  }
+  
+  .kids-footer::before {
+    content: "";
+    background: url('../images/footer.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  .footer-heading {
+    font-weight: bold;
+    color: #4b2e2e;
+    margin-left: -40px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+    margin-left: -40px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .footer-links a {
+    color: #4b2e2e;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-links a:hover {
+    color: #ff0000;
+  }
+  
+  .kids-form input.form-control {
+    border-radius: 12px;
+    border: 2px solid #ffcc00;
+    background-color: #fff9e6;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .kids-form input.form-control:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 10px #ffeb3b;
+    outline: none;
+  }
+  
+  .btn-submit {
+    background: linear-gradient(135deg, #ff69b4, #ffcc00);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background: linear-gradient(135deg, #ffa07a, #ffd700);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icons a {
+    background: linear-gradient(135deg, #ffd700, #ff69b4); 
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    border: 2px solid #fff; /* Adds a sticker-like effect */
+  }
+  
+  .social-icons a:hover {
+    background: linear-gradient(135deg, #ff6f91, #ffc107); /* Fun hover color shift */
+    transform: scale(1.1) rotate(5deg); /* Adds a bouncy effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  /* Responsive Footer - Mobile View */
+  @media (max-width: 767px) {
+    .footer-overlay {
+      padding: 30px 10px;
+    }
+  
+    .footer-heading {
+      font-size: 20px;
+      margin-left: 0;
+    }
+  
+    .footer-links li {
+      margin-left: 0;
+    }
+  
+    .footer-links a {
+      font-size: 16px;
+    }
+  
+    .kids-form input.form-control {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .kids-form button {
+      width: 100%;
+    }
+  
+    .social-icons {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .social-icons a {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+    }
+  
+    /* Stack the columns */
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .col-md-6.mb-4 {
+      margin-bottom: 20px;
+    }
+  }
