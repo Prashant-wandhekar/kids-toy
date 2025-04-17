@@ -63,9 +63,7 @@
 
 
   /* Footer Code */
-  
-/* Footer */
-.kids-footer {
+  .kids-footer {
     background-color: #fff;
     position: relative;
     overflow: hidden; 
@@ -153,7 +151,7 @@
   }
   
   .social-icons a {
-    background: linear-gradient(135deg, #ffd700, #ff69b4); 
+    background: linear-gradient(135deg, #ffd700, #ff69b4); /* Bright, kid-friendly colors */
     color: #fff;
     font-size: 20px;
     width: 40px;
